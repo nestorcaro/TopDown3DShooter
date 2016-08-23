@@ -78,7 +78,7 @@ public class Gun : MonoBehaviour {
       //----------------------------------------------------------------------------------------------------DEFINE NUMBER OF BULLETS AND RANGE AS PART OF THE LEVEL OF GUN      
 
             Rigidbody newShell = Instantiate(Shell, bulletEjection.position, bulletEjection.rotation) as Rigidbody; // Creation of Shell           
-            newShell.AddForce(bulletEjection.forward * Random.Range(100f, 200f));
+            newShell.AddForce(bulletEjection.forward * Random.Range(50f, 100f));
            
         }
     }
